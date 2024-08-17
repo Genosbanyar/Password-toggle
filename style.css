@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(65, 56, 46);
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.input-box {
+  position: relative;
+  top: 0;
+}
+
+.input-box input {
+  padding: 10px 15px;
+  font-size: 18px;
+  width: 350px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.fa-regular {
+  position: absolute;
+  top: 15px;
+  cursor: pointer;
+  right: 10px;
+}

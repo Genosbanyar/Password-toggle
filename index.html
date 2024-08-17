@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Toggle</title>
+    <script
+      src="https://kit.fontawesome.com/225a355f8f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-box">
+        <input
+          class="input-box"
+          id="pass"
+          type="password"
+          placeholder="Enter password..."
+        />
+        <i class="fa-regular fa-eye"></i>
+      </div>
+    </div>
+    <script>
+      const inputTag = document.getElementById("pass");
+      const icon = document.querySelector(".fa-eye");
+      icon.addEventListener("click", () => {
+        if (inputTag.type === "password") {
+          inputTag.type = "text";
+          icon.classList = "fa-regular fa-eye-slash";
+        } else {
+          inputTag.type = "password";
+          icon.classList = "fa-regular fa-eye";
+        }
+      });
+    </script>
+  </body>
+</html>
